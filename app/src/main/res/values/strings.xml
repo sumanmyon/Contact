@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Contact</string>
+
+    <!-- Login Page -->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+</resources>
