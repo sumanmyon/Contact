@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background">
+    android:background="@color/cardview_dark_background"
+    tools:context="com.example.suman.contact.LoginAndSignUpPage.SignUpActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -18,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:id="@+id/linear_layout_login"
+            android:id="@+id/linear_layout_signup"
             android:layout_below="@+id/imageView_login"
             android:background="@color/cardview_dark_background">
 
@@ -29,12 +33,13 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/editText_username_login"
-                    android:hint="Username"
+                    android:id="@+id/editText_email_signup"
+                    android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:textColor="@color/colorAccent"/>
 
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -42,8 +47,36 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/editText_password_login"
+                    android:id="@+id/editText_username_signup"
+                    android:hint="Username"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorAccent"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editText_password_signup"
                     android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorAccent"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editText_repassword_signup"
+                    android:hint="Re-password"
                     android:inputType="textPassword"
                     android:textColor="@color/colorAccent"/>
 
@@ -53,36 +86,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:id="@+id/button_login"
-                android:text="Login"
+                android:id="@+id/button_signup"
+                android:text="SignUp"
                 android:background="@color/colorAccent"/>
 
         </LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView_forget_pass_login"
-            android:text="Forget Password"
-            android:textSize="20dp"
-            android:textColor="#adeac1"
-            android:layout_marginEnd="10dp"
-            android:fontFamily="casual"
-            android:layout_below="@+id/linear_layout_login"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="10dp" />
-
-        <Button
-            android:id="@+id/button_signup_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_forget_pass_login"
-            android:layout_margin="10dp"
-            android:background="@color/colorPrimary"
-            android:drawableBottom="@android:drawable/button_onoff_indicator_off"
-            android:text="Create your Account"
-            android:textColor="@color/colorAccent" />
-
     </RelativeLayout>
-
 </ScrollView>
